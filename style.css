@@ -25,26 +25,6 @@ body {
     background-color: rgb(254, 243, 228);
 }
 
-/* scroll */
-::-webkit-scrollbar {
-    width: 1rem;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px grey;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-    background: #2ebf91;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-    background: #6cebc3;
-}
-
 /*  index page /////////////////////////////////////////////////////////// */
 
 /* banner section */

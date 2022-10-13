@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../common.css">
+    <link href="../edo.ttf">
+    <link href="../poppins/Poppins-Medium.ttf">
+    <title>commnets</title>
+</head>
+
+<body class="body">
+    <header id="header">
+        <nav id="nav_bar">
+            <div class="logo">
+                <img class="logo_img" src="../logo-removebg-preview.png" alt="logo">
+                 <span class="logo_text">Python</span>
+            </div>
+            <div id="menu">
+                <button class="menu_button" onclick="op()" ondblclick="rig()">Menu</button>
+                <button class="contact_button"><a href="contact.html">Contact</a></button>
+                <button class="content_button"><a href="../content.html">Content</a></button>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div onclick="rig()" class="nav_list">
+        <a href="../index.html"><img class="nav_img" src="../navbar_icons/home.png" alt=""></a>
+        <a href="../content.html"><img class="nav_img" src="../navbar_icons/open-book.png" alt=""></a>
+        <a href="#"><img class="nav_img" src="../navbar_icons/phone-call.png" alt=""></a>
+        <a href="#"><img class="nav_img" src="../navbar_icons/info.png" alt=""></a>
+    </div>
+
+
+    <div class="status">
+        <div class="title">
+            <h1>Python</h1>
+            <p>For complete begnniers</p>
+        </div>
+        <div class="status_bar">
+            <h4>STATUS BAR</h4>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="index">
+            <ul class="index_list">
+                <a href="../index.html">
+                    <li class="nav_heading">
+                        <img src="../logo-removebg-preview.png" alt="">
+                        <h3>Python</h3>
+                    </li>
+                </a>
+                <a href="introduction.html">
+                    <li class="side_bar_item">Intro</li>
+                </a>
+                <a href="syntax.html">
+                    <li class="side_bar_item">Syntax</li>
+                </a>
+                <a href="comment.html">
+                    <li class="side_bar_item selected">Comment</li>
+                </a>
+                <a href="variables.html">
+                    <li class="side_bar_item">Variables</li>
+                </a>
+                <a href="datatypes.html">
+                    <li class="side_bar_item">Datatypes</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Casting</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Strings</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Booleans</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Operators</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">If else</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Loops</li>
+                </a>
+            </ul>
+        </div>
+
+
+
+        <div class="content_file" id="comment_file">
+
+            <p class="top_nav"><a href="../index.html">Home</a> >> <a href="../content.html">Contents</a> >> <a
+                    href="comment.html"><u>Comments</u></a></p>
+            <!-- next previous -->
+            <div class="ne_pre">
+                <a href="syntax.html">
+                    <!-- <button title="It's ok to go back" class="pre">Content page</button> -->
+                    <img src="../left-arrow.png" alt="">
+                </a>
+                <a href="variables.html">
+                    <!-- <button title="level up" class="ne">next page</button> -->
+                    <img src="../right-arrow.png" alt="">
+                </a>
+            </div>
+
+
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+<div class="main_content">
+            <h1 class="heading">Comments</h1>
+            <p>Comments help the programmer to understand the program. Let's say there is programmer A who wrote some
+                100 to 500 lines of code to perform some task. Programmer B has to analyze the code written by
+                programmer A.
+                B may take some time to analyze the code. And he can understand it in one day or two days based on the
+                complexity
+                of the code. What if the number of lines in the code is more than 1000 to 5000? Then, it will take more
+                than
+                a week to
+                understand the code for B. But, using comments in a code and writing what happens in the code will help
+                programmer B to understand the code written by programmer A much faster.
+            </p>
+            <p class="example"><i>It's as if we have to travel long distances in many directions. It's difficult for us
+                    to remember the
+                    route
+                    to
+                    our destination. But, if we have some landmarks in mid-way. They will help us to reach our
+                    destination
+                    much
+                    faster.</i>
+            </p>
+            <div class="code">
+                <p>Example 3 : Single line comment</p>
+                <pre>
+<span class="pirple">if</span>(<span class="blue">5</span> > <span class="blue">6</span>):
+    <span class="orange">print</span>(<span class="drak_green">"hello"</span>) <span class="grey"># Single line comment</span>
+</pre>
+            </div>
+
+            <div class="code">
+                <p>Example 4 : Multi line comment</p>
+                <pre>
+<span class="grey"># Multiple</span>
+<span class="grey"># line</span>
+<span class="grey"># comment</span>
+<span class="pirple">if</span>(<span class="blue">5</span> > <span class="blue">6</span>):
+    <span class="orange">print</span>(<span class="drak_green">"hello"</span>) <span class="grey"># Single line comment</span>
+<span class="pirple">else</span>:
+    <span class="orange">print</span>(<span class="drak_green">"world"</span>) <span class="grey"># Single line comment</span> 
+</pre>
+            </div>
+
+            <div class="code">
+                <p>Example 5 : Multi line comment</p>
+                <pre>
+<span class="grey">"""</span>
+<span class="grey">Multiple</span>
+<span class="grey">line</span>
+<span class="grey">comment</span>
+<span class="grey">"""</span>
+<span class="pirple">if</span>(<span class="blue">5</span> > <span class="blue">6</span>):
+    <span class="orange">print</span>(<span class="drak_green">"hello"</span>) <span class="grey"># Single line comment</span>
+<span class="pirple">else</span>:
+    <span class="orange">print</span>(<span class="drak_green">"world"</span>) <span class="grey"># Single line comment</span> 
+</pre>
+            </div>
+
+            <p>Writing comments will not effect the code at all because they will be ignored by the compiler.</p>
+            <p class="imp_note">Basic rule 2 : <br>
+                Comments = landmarks</p>
+</div>
+
+
+
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+            <!-- next previous -->
+            <div class="ne_pre">
+                <a href="syntax.html">
+                    <!-- <button title="It's ok to go back" class="pre">Content page</button> -->
+                    <img src="../left-arrow.png" alt="">
+                </a>
+                <a href="variables.html">
+                    <!-- <button title="level up" class="ne">next page</button> -->
+                    <img src="../right-arrow.png" alt="">
+                </a>
+            </div>
+            <p class="top_nav"><a href="../index.html">Home</a> >> <a href="../content.html">Contents</a> >> <a
+                    href="comment.html"><u>Comments</u></a></p>
+        </div>
+    </div>
+
+
+
+
+
+
+    <footer id="footer">
+        <div class="contact_us">
+            <h3>Contact us</h3>
+            <p> Email: gblvenkatesh@gmail.com</p>
+            <div id="social_media">
+                <div>
+                    <img src="../social _media/linkedin.png" alt="">
+                </div>
+                <div>
+                    <img src="../social _media/instagram.png" alt="">
+                </div>
+                <div>
+                    <img src="../social _media/whatsapp.png" alt="">
+                </div>
+                <div>
+                    <img src="../social _media/twitter.png" alt="">
+                </div>
+                <div>
+                    <img src="../social _media/facebook.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="author">
+            <p>Author: Gubbala. Bogalingeswara Venkatesh</p>
+            <button>About me</button>
+            <p> © All Copyrights reserved</p>
+        </div>
+
+    </footer>
+
+
+    <!-- home icon -->
+    <div id="up_down">
+        <a href="index.html"><img src="../navbar_icons/home.png" alt=""></a>
+ <a href="#header"><img src="../arrow-up.png" alt=""></a>
+<a href="#footer"><img src="../down-arrow.png" alt=""></a>
+    </div>
+
+    <script>
+        function op() {
+            document.querySelector('.nav_list').setAttribute("style", "opacity: 1; z-index: 1;");
+            document.querySelector("button").innerText = "2 Close";
+            document.querySelector("#banner").setAttribute("style", "opacity: 0.5;")
+        }
+        function rig() {
+            document.querySelector('.nav_list').setAttribute("style", "opacity: 0; z-index: -1;");
+            document.querySelector("button").innerText = "Menu";
+            document.querySelector("#banner").setAttribute("style", "opacity: 1;")
+        }
+
+    </script>
+
+</body>
+
+</html>

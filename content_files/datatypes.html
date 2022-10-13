@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../common.css">
+    <link href="../edo.ttf">
+    <link href="../poppins/Poppins-Medium.ttf">
+    <title>data_types</title>
+</head>
+
+<body class="body">
+
+
+
+    <!-- HEADER -->
+    <header id="header">
+        <nav id="nav_bar">
+            <div class="logo">
+                <img class="logo_img" src="../logo-removebg-preview.png" alt="logo">
+                 <span class="logo_text">Python</span>
+            </div>
+            <div id="menu">
+                <button class="menu_button" onclick="op()" ondblclick="rig()">Menu</button>
+                <button class="contact_button"><a href="contact.html">Contact</a></button>
+                <button class="content_button"><a href="../content.html">Content</a></button>
+            </div>
+        </nav>
+    </header>
+
+    <div onclick="rig()" class="nav_list">
+        <a href="../index.html"><img class="nav_img" src="../navbar_icons/home.png" alt=""></a>
+        <a href="../content.html"><img class="nav_img" src="../navbar_icons/open-book.png" alt=""></a>
+        <a href="#"><img class="nav_img" src="../navbar_icons/phone-call.png" alt=""></a>
+        <a href="#"><img class="nav_img" src="../navbar_icons/info.png" alt=""></a>
+    </div>
+
+
+
+    <div class="status">
+        <div class="title">
+            <h1>Python</h1>
+            <p>For complete begnniers</p>
+        </div>
+        <div class="status_bar">
+            <h4>STATUS BAR</h4>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="index">
+            <ul class="index_list">
+                <a href="../index.html">
+                    <li class="nav_heading">
+                        <img src="../logo-removebg-preview.png" alt="">
+                        <h3>Python</h3>
+                    </li>
+                </a>
+                <a href="introduction.html">
+                    <li class="side_bar_item">Intro</li>
+                </a>
+                <a href="syntax.html">
+                    <li class="side_bar_item">Syntax</li>
+                </a>
+                <a href="comment.html">
+                    <li class="side_bar_item">Comment</li>
+                </a>
+                <a href="variables.html">
+                    <li class="side_bar_item">Variables</li>
+                </a>
+                <a href="datatypes.html">
+                    <li class="side_bar_item selected">Datatypes</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Casting</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Strings</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Booleans</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Operators</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">If else</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Loops</li>
+                </a>
+            </ul>
+        </div>
+
+
+        <div class="content_file" id="datatypes_file">
+            <p class="top_nav"><a href="../index.html">Home</a> >> <a href="../content.html">Contents</a> >> <a
+                    href="datatypes.html"><u>Datatypes</u></a></p>
+            <!-- next previous -->
+            <div class="ne_pre">
+                <a href="variables.html">
+                    <!-- <button title="It's ok to go back" class="pre">Content page</button> -->
+                    <img src="../left-arrow.png" alt="">
+                </a>
+                <a href="casting.html">
+                    <!-- <button title="level up" class="ne">next page</button> -->
+                    <img src="../right-arrow.png" alt="">
+                </a>
+            </div>
+
+            <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+<div class="main_content">
+            <h1 class="heading">Datatypes</h1> 
+            <p>An empty box can be filled with any object (books, toys, cloths, etc). Datatype means what type of data
+                (object) is placed in the variable (box)</p>
+            <p>Datatype tell what type of data we are using the code to perform the operations</p>
+            <p>Python has following built-in datatypes : </p>
+
+            <p>Text Type : <code>str</code></p>
+            <p>Numeric Type : <code>int</code>, <code>float</code>, <code>complex</code></p>
+            <p>Sequence Type : <code>list</code>, <code>tuple</code>, <code>range</code></p>
+            <p>Mapping Type : <code>dict</code></p>
+            <p>Set Type : <code>set</code>, <code>frozenset</code></p>
+            <p>Boolean Type : <code>bool</code></p>
+            <p>Binary Type : <code>bytes</code>, <code>bytearray</code>, <code>memoryview</code></p>
+            <p>None Type : <code>NoneType</code></p>
+            <br><br>
+            <h3>Creating and Assigining : </h3>
+
+            <div class="code">
+                <p>Example 16 : Datatypes</p>
+                <pre>
+<span class="darkorange">a</span> = <span class="drak_green">"helloworld"</span> <span class="grey"># string</span>
+<span class="darkorange">a</span> = <span class="blue">5</span> <span class="grey"># integer</span>
+<span class="darkorange">a</span> = <span class="blue">5.0</span> <span class="grey"># float</span>
+<span class="darkorange">a</span> = <span class="blue">2j</span> <span class="grey"># complex</span>
+<span class="darkorange">a</span> = [<span class="drak_green">"one"</span>, <span class="drak_green">"two"</span>, <span class="drak_green">"three"</span>] <span class="grey"># list</span>
+<span class="darkorange">a</span> = (<span class="drak_green">"one"</span>, <span class="drak_green">"two"</span>, <span class="drak_green">"three"</span>) <span class="grey"># tuple</span>
+<span class="darkorange">a</span> = <span class="yellow">range</span>(<span class="blue">5</span>) <span class="grey"># range</span>
+<span class="darkorange">a</span> = {<span class="drak_green">"name"</span>:<span class="drak_green">"BMW"</span>, <span class="drak_green">"number"</span>:<span class="blue">5</span>} <span class="grey"># dict</span>
+<span class="darkorange">a</span> = {<span class="drak_green">"one"</span>, <span class="drak_green">"two"</span>, <span class="drak_green">"number"</span>} <span class="grey"># set</span>
+<span class="darkorange">a</span> = <span class="yellow">frozenset</span>({<span class="drak_green">"one"</span>, <span class="drak_green">"two"</span>, <span class="drak_green">"number"</span>}) <span class="grey"># frozenset</span>
+<span class="darkorange">a</span> = <span class="red">True</span> <span class="grey"># bool</span>
+<span class="darkorange">a</span> = <span class="drak_green">b"Hello"</span>  <span class="grey"># bytes</span>
+<span class="darkorange">a</span> = <span class="yellow">bytesarray</span>(<span class="blue">5</span>)  <span class="grey"># bytearray</span>
+<span class="darkorange">a</span> = <span class="yellow">memoryview</span>(<span class="yellow">bytes</span>(<span class="blue">5</span>))  <span class="grey"># memoryview</span>
+</pre>
+
+            </div>
+<p>Don't worry about all these datatypes and how they will work. we will look into each one in detail.</p>
+
+
+<p><a class="more_info" target="_blank" href="numeric_type.html">/// Numeric type ///</a></p>
+<p><a class="more_info" target="_blank" href="list_type.html">/// List type ///</a></p>
+<p><a class="more_info" target="_blank" href="tuple.html">/// Tuple type ///</a></p>
+<p><a class="more_info" target="_blank" href="set.html">/// Set type ///</a></p>
+<p><a class="more_info" target="_blank" href="dictionaries.html">/// Dictionaries ///</a></p>
+<p><a class="more_info" target="_blank" href="boolean.html">/// Boolean ///</a></p>
+
+
+
+
+
+<p class="imp_note">Basic rule 4 : <br> Data-type = Tells type of object stored in the box</p></div>
+
+
+
+            <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+            <!-- next previous -->
+            <div class="ne_pre">
+                <a href="variables.html">
+                    <!-- <button title="It's ok to go back" class="pre">Content page</button> -->
+                    <img src="../left-arrow.png" alt="">
+                </a>
+                <a href="casting.html">
+                    <!-- <button title="level up" class="ne">next page</button> -->
+                    <img src="../right-arrow.png" alt="">
+                </a>
+            </div>
+            <p class="top_nav"><a href="../index.html">Home</a> >> <a href="../content.html">Contents</a> >> <a
+                    href="datatypes.html"><u>Datatypes</u></a></p>
+            <!-- end of print variables -->
+
+
+
+        </div> <!-- end of content_files-->
+
+    </div>
+    <!--end of container-->
+
+<footer id="footer">
+        <div class="contact_us">
+            <h3>Contact us</h3>
+            <p> Email: gblvenkatesh@gmail.com</p>
+            <div id="social_media">
+                <div>
+                    <img src="../social _media/linkedin.png" alt="">
+                </div>
+                <div>
+                    <img src="../social _media/instagram.png" alt="">
+                </div>
+                <div>
+                    <img src="../social _media/whatsapp.png" alt="">
+                </div>
+                <div>
+                    <img src="../social _media/twitter.png" alt="">
+                </div>
+                <div>
+                    <img src="../social _media/facebook.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="author">
+            <p>Author: Gubbala. Bogalingeswara Venkatesh</p>
+            <button>About me</button>
+            <p> © All Copyrights reserved</p>
+        </div>
+
+    </footer>
+
+
+
+    <!-- home icon -->
+    <div id="up_down">
+        <a href="index.html"><img src="../navbar_icons/home.png" alt=""></a>
+ <a href="#header"><img src="../arrow-up.png" alt=""></a>
+<a href="#footer"><img src="../down-arrow.png" alt=""></a>
+    </div>
+
+
+    <script>
+        function op() {
+            document.querySelector('.nav_list').setAttribute("style", "opacity: 1; z-index: 1;");
+            document.querySelector("button").innerText = "2 Close";
+            document.querySelector("#banner").setAttribute("style", "opacity: 0.5;")
+        }
+        function rig() {
+            document.querySelector('.nav_list').setAttribute("style", "opacity: 0; z-index: -1;");
+            document.querySelector("button").innerText = "Menu";
+            document.querySelector("#banner").setAttribute("style", "opacity: 1;")
+        }
+
+    </script>
+
+</body>
+
+</html>

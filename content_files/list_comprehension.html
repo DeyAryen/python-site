@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../common.css">
+    <link href="../edo.ttf">
+    <link href="../poppins/Poppins-Medium.ttf">
+    <title>List comprehension</title>
+</head>
+
+<body class="body">
+    <!-- HEADER -->
+    <header id="header">
+        <nav id="nav_bar">
+            <div class="logo">
+                <img class="logo_img" src="../logo-removebg-preview.png" alt="logo">
+                 <span class="logo_text">Python</span>
+            </div>
+            <div id="menu">
+                <button class="menu_button" onclick="op()" ondblclick="rig()">Menu</button>
+                <button class="contact_button"><a href="contact.html">Contact</a></button>
+                <button class="content_button"><a href="../ontent.html">Content</a></button>           </div>
+        </nav>
+    </header>
+
+    <div onclick="rig()" class="nav_list">
+        <a href="../index.html"><img class="nav_img" src="../navbar_icons/home.png" alt=""></a>
+        <a href="../content.html"><img class="nav_img" src="../navbar_icons/open-book.png" alt=""></a>
+        <a href="#"><img class="nav_img" src="../navbar_icons/phone-call.png" alt=""></a>
+        <a href="#"><img class="nav_img" src="../navbar_icons/info.png" alt=""></a>
+    </div>
+
+
+
+    <div class="status">
+        <div class="title">
+            <h1>Python</h1>
+            <p>For complete begnniers</p>
+        </div>
+        <div class="status_bar">
+            <h4>STATUS BAR</h4>
+        </div>
+    </div>
+
+
+    <div class="container">
+
+        <div class="index">
+            <ul class="index_list">
+                <a href="../index.html">
+                    <li class="nav_heading">
+                        <img src="../logo-removebg-preview.png" alt="">
+                        <h3>Python</h3>
+                    </li>
+                </a>
+                <a href="introduction.html">
+                    <li class="side_bar_item">Intro</li>
+                </a>
+                <a href="syntax.html">
+                    <li class="side_bar_item">Syntax</li>
+                </a>
+                <a href="comment.html">
+                    <li class="side_bar_item">Comment</li>
+                </a>
+                <a href="variables.html">
+                    <li class="side_bar_item">Variables</li>
+                </a>
+                <a href="datatypes.html">
+                    <li class="side_bar_item selected">Datatypes</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Casting</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Strings</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Booleans</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Operators</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">If else</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Loops</li>
+                </a>
+            </ul>
+        </div>
+        <!-- end of index -->
+        <!-- content_files -->
+        <div class="content_file" id="numeric_file">
+            <p class="top_nav"><a href="../index.html">Home</a> >> <a href="../content.html">Contents</a> >> <a
+                    href="datatypes.html">Datatypes</a> >> <a href="list_type.html">List Type</a> >> <a
+                    href="list_comprehension.html"><u>List comprehension</u></a></p>
+            <!-- next previous -->
+            <div class="ne_pre">
+                <a href="list_loop.html">
+                    <img src="../left-arrow.png" alt="">
+                </a>
+                <a href="list_methods.html">
+                    <img src="../right-arrow.png" alt="">
+                </a>
+            </div>
+            <!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+
+            <div class="main_content">
+
+
+
+                <h1 class="heading">List - Comprehension</h1>
+                <p>
+                    List comprehension will offer a simple syntax when we are creating a new list from the existing
+                    list.
+                </p>
+                <p class="example"><em>newlist = [expression <span class="brown">for</span> item <span
+                            class="brown">in</span> iterable <span class="brown">if</span> condition == <span
+                            class="red">True</span>]</em></p>
+                <div class="code">
+                    <p>Example 49 : Without Comprehension</p>
+                    <pre>
+<span class="darkorange">fruits</span> = [<span class="drak_green">"apple"</span>, <span class="drak_green">"kiwi"</span>, <span class="drak_green">"orange"</span>, <span class="drak_green">"cherry"</span>]
+<span class="darkorange">Fruits</span> = []
+
+<span class="brown">for</span> <span class="darkorange">x</span> <span class="brown">in</span> <span class="drakorange">fruits</span>:
+    <span class="brown">if</span> <span class="drak_green">"a"</span> <span class="brown">in</span> <span class="drak_green">x</span>:
+        <span class="darkorange">Fruits</span>.<span class="yellow">append</span>(<span class="darkorange">x</span>)
+
+<span class="yellow">print</span>(<span class="drak_green">Fruits</span>)
+</pre>
+                    <p>Output :</p>
+                    <pre class="green_result">
+[<span class="drak_green">"apple"</span>, <span class="drak_green">"orange"</span>]
+</pre>
+
+                </div>
+
+                <div class="code">
+                    <p>Example 50 : With Comprension</p>
+                    <pre class="green_result">
+<span class="darkorange">fruits</span> = [<span class="drak_green">"apple"</span>, <span class="drak_green">"kiwi"</span>, <span class="drak_green">"orange"</span>, <span class="drak_green">"cherry"</span>]
+<span class="darkorange">Fruits</span> = [<span class="darkorange">x</span> <span class="brown">for</span> <span class="darkorange">x</span> <span class="brown">in</span> <span class="darkorange">fruits</span> <span class="brown">if</span> <span class="drak_green">"a"</span> <span class="brown">in</span> <span class="darkorange">x</span>] 
+<span class="yellow">print</span>(<span class="darkorange">Fruits</span>)
+                    </pre>
+                    <p>Output :</p>
+                    <pre class="green_result">
+[<span class="drak_green">"apple"</span>, <span class="drak_green">"orange"</span>]
+</pre>
+                </div>
+
+            </div>
+
+
+
+
+
+
+            <!-- //////////////////////////////////////////////////////////////////////////////////////////////// -->
+            <!-- next previous -->
+            <div class="ne_pre">
+                <a href="list_loop.html">
+                    <img src="../left-arrow.png" alt="">
+                </a>
+                <a href="list_methods.html">
+                    <img src="../right-arrow.png" alt="">
+                </a>
+            </div>
+            <p class="top_nav"><a href="../index.html">Home</a> >> <a href="../content.html">Contents</a> >> <a
+                    href="datatypes.html">Datatypes</a> >> <a href="list_type.html">List Type</a> >> <a
+                    href="list_comprehension.html"><u>List comprehension</u></a></p>
+        </div>
+        <!-- end of content files -->
+    </div>
+    <!-- end of container -->
+
+
+    <footer id="footer">
+        <div class="contact_us">
+            <h3>Contact us</h3>
+            <p> Email: gblvenkatesh@gmail.com</p>
+            <div id="social_media">
+                <div>
+                    <img src="../social _media/linkedin.png" alt="">
+                </div>
+                <div>
+                    <img src="../social _media/instagram.png" alt="">
+                </div>
+                <div>
+                    <img src="../social _media/whatsapp.png" alt="">
+                </div>
+                <div>
+                    <img src="../social _media/twitter.png" alt="">
+                </div>
+                <div>
+                    <img src="../social _media/facebook.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="author">
+            <p>Author: Gubbala. Bogalingeswara Venkatesh</p>
+            <button>About me</button>
+            <p> © All Copyrights reserved</p>
+        </div>
+
+    </footer>
+
+
+
+    <!-- home icon -->
+    <div id="up_down">
+        <a href="index.html"><img src="../navbar_icons/home.png" alt=""></a>
+        <a href="#header"><img src="../arrow-up.png" alt=""></a>
+        <a href="#footer"><img src="../down-arrow.png" alt=""></a>
+    </div>
+
+
+    <script>
+        function op() {
+            document.querySelector('.nav_list').setAttribute("style", "opacity: 1; z-index: 1;");
+            document.querySelector("button").innerText = "2 Close";
+            document.querySelector("#banner").setAttribute("style", "opacity: 0.5;")
+        }
+        function rig() {
+            document.querySelector('.nav_list').setAttribute("style", "opacity: 0; z-index: -1;");
+            document.querySelector("button").innerText = "Menu";
+            document.querySelector("#banner").setAttribute("style", "opacity: 1;")
+        }
+
+    </script>
+</body>
+
+</html>

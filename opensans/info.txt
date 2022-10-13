@@ -1,0 +1,10 @@
+python history
+
+python is a widely used general purpose, high level programming language
+it is initially designed by guido van rossum in 1991 and later developed by python software foundation
+python is so popular because of its readability, and its syntax allows programmers to express concepts in fewer lines of code.
+
+The python language originated from the ABC language. Guido Van Rossum had taken the syntax of ABC
+                    language and some of the good features of the ABC language like Exception handling.
+                    Guido Van Rossum was a big fan of a TV show called Monty Python’s Flying Circus, so he named his
+                    invention 'Python'.

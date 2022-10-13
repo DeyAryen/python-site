@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../common.css">
+    <link href="../edo.ttf">
+    <link href="../poppins/Poppins-Medium.ttf">
+    <title>syntax</title>
+</head>
+
+<body class="body">
+    <!-- HEADER -->
+    <header id="header">
+        <nav id="nav_bar">
+            <div class="logo">
+                <img class="logo_img" src="../logo-removebg-preview.png" alt="logo">
+                 <span class="logo_text">Python</span>
+            </div>
+            <div id="menu">
+                <button class="menu_button" onclick="op()" ondblclick="rig()">Menu</button>
+                <button class="contact_button"><a href="contact.html">Contact</a></button>
+                <button class="content_button"><a href="../content.html">Content</a></button>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div onclick="rig()" class="nav_list">
+        <a href="../index.html"><img class="nav_img" src="../navbar_icons/home.png" alt=""></a>
+        <a href="../content.html"><img class="nav_img" src="../navbar_icons/open-book.png" alt=""></a>
+        <a href="#"><img class="nav_img" src="../navbar_icons/phone-call.png" alt=""></a>
+        <a href="#"><img class="nav_img" src="../navbar_icons/info.png" alt=""></a>
+    </div>
+
+    <div class="status">
+        <div class="title">
+            <h1>Python</h1>
+            <p>For complete begnniers</p>
+        </div>
+        <div class="status_bar">
+            <h4>STATUS BAR</h4>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class="index">
+            <ul class="index_list">
+                <a href="../index.html">
+                    <li class="nav_heading">
+                        <img src="../logo-removebg-preview.png" alt="">
+                        <h3>Python</h3>
+                    </li>
+                </a>
+                <a href="introduction.html">
+                    <li class="side_bar_item">Intro</li>
+                </a>
+                <a href="syntax.html">
+                    <li class="side_bar_item selected">Syntax</li>
+                </a>
+                <a href="comment.html">
+                    <li class="side_bar_item">Comment</li>
+                </a>
+                <a href="variables.html">
+                    <li class="side_bar_item">Variables</li>
+                </a>
+                <a href="datatypes.html">
+                    <li class="side_bar_item">Datatypes</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Casting</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Strings</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Booleans</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Operators</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">If else</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Loops</li>
+                </a>
+            </ul>
+        </div>
+
+
+        <div class="content_file" id="syntax_file">
+
+            <p class="top_nav"><a href="../index.html">Home</a> >> <a href="../content.html">Contents</a> >> <a
+                    href="syntax.html"><u>Syntax</u></a></p>
+            <!-- next previous -->
+            <div class="ne_pre">
+                <a href="introduction.html">
+                    <!-- <button title="It's ok to go back" class="pre">Content page</button> -->
+                    <img src="../left-arrow.png" alt="">
+                </a>
+                <a href="comment.html">
+                    <!-- <button title="level up" class="ne">next page</button> -->
+                    <img src="../right-arrow.png" alt="">
+                </a>
+            </div>
+
+<!-- ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+<div class="main_content">
+           <h1 class="heading">Syntax</h1>
+            <h3>Indentation :</h3>
+            <p>Indentation is about how we align the code in each line. In other programming languages indentaion is
+                just about understanding the code it's not mandatory. But, in python indentation plays a important role.
+                Incorrect indentation leads to error or false result.
+            </p>
+
+            <!-- EXAMPLE 1 -->
+            <div class="code">
+
+                <p>Example 1 :</p>
+                <pre>
+<span class="pirple">if</span>(<span class="blue">5</span> > <span class="blue">6</span>):
+    <span class="orange">print</span>(<span class="drak_green">"hello"</span>) <span class="green"># correct</span>
+<span class="pirple">else</span>:
+    <span class="orange">print</span>(<span class="drak_green">"world"</span>) <span class="green"># correct</span> 
+</pre>
+                <p>Output</p>
+                <pre class="green_result">
+<span class="drak_green">hello</span>
+</pre>
+            </div>
+
+
+            <!-- EXAMPLE 2 -->
+            <div class="code">
+                <p>Example 2 :</p>
+                <pre>
+<span class="pirple">if</span>(<span class="blue">5</span> > <span class="blue">6</span>):
+<span class="orange">print</span>(<span class="drak_green">"hello"</span>) <span class="red"># Incorrect</span>
+<span class="pirple">else</span>:
+    <span class="orange">print</span>(<span class="drak_green">"world"</span>) <span class="green"># correct</span> 
+</pre>
+                <p>Output</p>
+                <pre class="red_result">
+    <span class="red"> print("hello")</span>
+    ^
+<span class="red">IndentationError: expected an indented block</span>
+</pre>
+            </div>
+
+            <p class="imp_note">Basic rule 1 : <br>
+                Missing indentation (or) Syntax = Missing expected result (or) Geting error.</p>
+</div>
+
+ 
+
+
+<!-- /////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+
+
+            <!-- next previous -->
+            <div class="ne_pre">
+                <a href="introduction.html">
+                    <!-- <button title="It's ok to go back" class="pre">Content page</button> -->
+                    <img src="../left-arrow.png" alt="">
+                </a>
+                <a href="comment.html">
+                    <!-- <button title="level up" class="ne">next page</button> -->
+                    <img src="../right-arrow.png" alt="">
+                </a>
+            </div>
+            <p class="top_nav"><a href="../index.html">Home</a> >> <a href="../content.html">Contents</a> >> <a
+                    href="syntax.html"><u>Syntax</u></a></p>
+        </div>
+    </div>
+
+
+<!-- ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+
+    <footer id="footer">
+        <div class="contact_us">
+            <h3>Contact us</h3>
+            <p> Email: gblvenkatesh@gmail.com</p>
+            <div id="social_media">
+                <div>
+                    <img src="../social _media/linkedin.png" alt="">
+                </div>
+                <div>
+                    <img src="../social _media/instagram.png" alt="">
+                </div>
+                <div>
+                    <img src="../social _media/whatsapp.png" alt="">
+                </div>
+                <div>
+                    <img src="../social _media/twitter.png" alt="">
+                </div>
+                <div>
+                    <img src="../social _media/facebook.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="author">
+            <p>Author: Gubbala. Bogalingeswara Venkatesh</p>
+            <button>About me</button>
+            <p> © All Copyrights reserved</p>
+        </div>
+
+    </footer>
+
+
+
+    <!-- home icon -->
+    <div id="up_down">
+        <a href="index.html"><img src="../navbar_icons/home.png" alt=""></a>
+ <a href="#header"><img src="../arrow-up.png" alt=""></a>
+<a href="#footer"><img src="../down-arrow.png" alt=""></a>
+    </div>iv>
+
+
+    <script>
+        function op() {
+            document.querySelector('.nav_list').setAttribute("style", "opacity: 1; z-index: 1;");
+            document.querySelector("button").innerText = "2 Close";
+            document.querySelector("#banner").setAttribute("style", "opacity: 0.5;")
+        }
+        function rig() {
+            document.querySelector('.nav_list').setAttribute("style", "opacity: 0; z-index: -1;");
+            document.querySelector("button").innerText = "Menu";
+            document.querySelector("#banner").setAttribute("style", "opacity: 1;")
+        }
+
+    </script>
+</body>
+
+</html>

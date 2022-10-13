@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../common.css">
+    <link href="../edo.ttf">
+    <link href="../poppins/Poppins-Medium.ttf">
+    <title>variables</title>
+</head>
+
+<body class="body">
+    <!-- HEADER -->
+    <header id="header">
+        <nav id="nav_bar">
+            <div class="logo">
+                <img class="logo_img" src="../logo-removebg-preview.png" alt="logo">
+                 <span class="logo_text">Python</span>
+            </div>
+            <div id="menu">
+                <button class="menu_button" onclick="op()" ondblclick="rig()">Menu</button>
+                <button class="contact_button"><a href="contact.html">Contact</a></button>
+                <button class="content_button"><a href="../content.html">Content</a></button>
+            </div>
+        </nav>
+    </header>
+
+
+
+    <div onclick="rig()" class="nav_list">
+        <a href="../index.html"><img class="nav_img" src="../navbar_icons/home.png" alt=""></a>
+        <a href="../content.html"><img class="nav_img" src="../navbar_icons/open-book.png" alt=""></a>
+        <a href="#"><img class="nav_img" src="../navbar_icons/phone-call.png" alt=""></a>
+        <a href="#"><img class="nav_img" src="../navbar_icons/info.png" alt=""></a>
+    </div>
+
+    <div class="status">
+        <div class="title">
+            <h1>Python</h1>
+            <p>For complete begnniers</p>
+        </div>
+        <div class="status_bar">
+            <h4>STATUS BAR</h4>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="index">
+            <ul class="index_list">
+                <a href="../index.html">
+                    <li class="nav_heading">
+                        <img src="../logo-removebg-preview.png" alt="">
+                        <h3>Python</h3>
+                    </li>
+                </a>
+                <a href="introduction.html">
+                    <li class="side_bar_item">Intro</li>
+                </a>
+                <a href="syntax.html">
+                    <li class="side_bar_item">Syntax</li>
+                </a>
+                <a href="comment.html">
+                    <li class="side_bar_item">Comment</li>
+                </a>
+                <a href="variables.html">
+                    <li class="side_bar_item selected">Variables</li>
+                </a>
+                <a href="datatypes.html">
+                    <li class="side_bar_item">Datatypes</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Casting</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Strings</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Booleans</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Operators</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">If else</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Loops</li>
+                </a>
+            </ul>
+        </div>
+
+
+
+        <div class="content_file" id="variables_file">
+            <p class="top_nav"><a href="../index.html">Home</a> >> <a href="../content.html">Contents</a> >> <a
+                    href="variables.html"><u>Variables</u></a></p>
+            <!-- next previous -->
+            <div class="ne_pre">
+                <a href="comment.html">
+                    <!-- <button title="It's ok to go back" class="pre">Content page</button> -->
+                    <img src="../left-arrow.png" alt="">
+                </a>
+                <a href="datatypes.html">
+                    <!-- <button title="level up" class="ne">next page</button> -->
+                    <img src="../right-arrow.png" alt="">
+                </a>
+            </div>
+
+
+            <!-- //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+            <div class="main_content">
+                <h1 class="heading">Variables</h1>
+
+                <p>Variables are data holding boxes that stores data in them. Creating variables and assigning value to
+                    them
+                    is very simple in Python compared to other programming languages.
+                </p>
+                <p class="example">Syntax : <i>variable = value;</i></p>
+                <p>In Python, we don't need to specify the <a href="#">datatypes</a> before the variable when we create
+                    it.
+                    It depends on
+                    which type of value we assign to the variable.</p>
+                <p>Variables can be reassigned just like an item in a box can be replaced.</p>
+
+                <!-- creating and assigning variables -->
+
+                <div class="code">
+                    <p>Example 6 : Creating and Assigning variables</p>
+                    <pre>
+<span class="darkorange">A</span> = <span class="blue">5</span> <span class="grey"># Integer</span>
+<span class="darkorange">A</span> = <span class="blue">5.0</span> <span class="grey"># Float</span>
+<span class="darkorange">A</span> = <span class="blue">'5'</span> <span class="grey"># Character</span>
+<span class="darkorange">A</span> = <span class="blue">"five"</span> <span class="grey"># String</span>
+</pre>
+                </div>
+                <!-- end of creating and assigning variables -->
+                <!-- variable names do and don't -->
+
+                <h3>Valid variables : </h3>
+                <p>
+                    Variables can be short names (like a, b, c) or a more descriptive names (like first_name, age, avg).
+                    But,
+                    remember variables are <i>case senitive</i>. So, <b>A</b> is different form <b>a</b>.
+                </p>
+                <div class="imp_note">
+                    <p>
+                        We have some rules for naming a variables :
+                    </p>
+                    <br>
+                    <p>
+                        1. Should start with letter or underscore. <br>
+                        2. No starting with numbers. <br>
+                        3. Should only contain a-z, A-Z, 0-9, _. <br>
+                        4. Case sensitive A is different form a.
+                    </p>
+                </div>
+                <!-- do's -->
+                <div class="code">
+                    <p>
+                        Example 7 : Valid variables
+                    </p>
+                    <pre>
+<span class="darkorange">myvariable</span> = <span class="blue">5</span> 
+<span class="darkorange">myvariable2</span> = <span class="blue">5.0</span> 
+<span class="darkorange">_my_variable</span> = <span class="blue">'5'</span> 
+<span class="grey"># best use for multi word variable name</span>
+<span class="darkorange">myVariable</span> = <span class="blue">"five"</span> <span class="grey"># camelCase</span>
+<span class="darkorange">MyVariable</span> = <span class="blue">5</span> <span class="grey"># PascalCase</span>
+<span class="darkorange">my_variable</span> = <span class="blue">5.0</span> <span class="grey"># snake_case</span>
+</pre>
+                </div>
+                <!-- don't -->
+                <div class="code">
+                    <p>
+                        Example 8 : Invalid variables
+                    </p>
+                    <pre>
+<span class="darkorange">my variable</span> = <span class="blue">5</span>
+<span class="darkorange">3myvariable2</span> = <span class="blue">5.0</span> 
+<span class="darkorange">_my-variable</span> = <span class="blue">'5'</span> 
+</pre>
+                </div>
+                <!-- variable names do and don't -->
+                <!-- Mulitple variables - Multiple assign -->
+
+                <H3>Mulitple variables - Multiple assign : </H3>
+                <p>
+                    We can assign multiple values to multiple variables at a time. Below we have 2 exmples shown that
+                    how to
+                    assign mulitple values to mulitple variables.
+                </p>
+                <div class="code">
+                    <p>
+                        Example 9 : Mulitple assign
+                    </p>
+                    <pre>
+<span class="darkorange">x</span>, <span class="darkorange">y</span>, <span class="darkorange">z</span> = <span class="blue">5</span>, <span class="blue">6</span>, <span class="blue">7</span>
+<span class="darkorange">x</span> = <span class="darkorange">y</span> = <span class="darkorange">z</span> = <span class="blue">5</span>
+<span class="grey"># try runing in your code editor</span>
+<span class="grey"># print(x)</span>
+</pre>
+                </div>
+                <!-- end of Mulitple variables - Multiple assign -->
+                <!-- Casting section -->
+                <h3>Casting : </h3>
+                <p>Data type of a variable will be depending on type of value that's assign to it. But, the data type of
+                    the
+                    variable can be changed by type casting the value.</p>
+                <div class="code">
+                    <p>Example 10 : Conversion</p>
+                    <pre>
+<span class="darkorange">A</span> = <span class="yellow">int</span>(<span class="blue">5</span>) <span class="grey"># output 5</span>
+<span class="darkorange">B</span> = <span class="yellow">str</span>(<span class="blue">5</span>) <span class="grey"># output '5'</span>
+<span class="darkorange">C</span> = <span class="yellow">float</span>(<span class="blue">5</span>) <span class="grey"># output 5.0</span>
+</pre>
+                </div>
+                <!-- end of casting section -->
+                <!-- printing variables -->
+
+                <h3>Printing variables : </h3>
+                <p>Using the <code>print()</code> function in Python we can print the values assigned to the variables.
+                </p>
+                <div class="code">
+                    <p>Example 11 : </p>
+                    <pre>
+<span class="darkorange">First_name</span> = <span class="drak_green">"xyz"</span>
+<span class="darkorange">Last_name</span> = <span class="drak_green">"abc"</span>
+<span class="darkorange">a</span> = <span class="blue">5</span>
+<span class="darkorange">b</span> = <span class="drak_green">"xyz"</span>
+<span class="yellow">Print</span>(<span class="darkorange">First_name</span>, <span class="darkorange">Last_name</span>)
+<span class="yellow">Print</span>(<span class="darkorange">a</span>, <span class="darkorange">b</span>)
+</pre>
+                    <p>Output</p>
+                    <pre class="green_result">
+<span class="drak_green">xyz abc</span>
+<span class="blue">9</span><span class="drak_green"> xyz</span>
+</pre>
+                </div>
+                <p>Concatenate the values using + operator. <br>
+                    We can concatenate 2 strings but, we cannot concatenate a string and integer.
+                </p>
+
+                <div class="code">
+                    <p>Example 12 : Concatenation</p>
+                    <pre>
+<span class="darkorange">First_name</span> = <span class="drak_green">"xyz "</span>
+<span class="darkorange">Last_name</span> = <span class="drak_green">"abc"</span>
+<span class="darkorange">a</span> = <span class="blue">5</span>
+<span class="darkorange">b</span> = <span class="blue">4</span>
+<span class="yellow">print</span>(<span class="darkorange">First_name</span> + <span class="darkorange">Last_name</span>)
+<span class="yellow">print</span>(<span class="darkorange">a</span> + <span class="darkorange">b</span>)
+</pre>
+                    <p>Output</p>
+                    <pre class="green_result">
+<span class="drak_green">xyz abc</span>
+<span class="blue">9</span>
+</pre>
+                </div>
+
+                <div class="code">
+                    <p>Example 13 : Concatenation of str and int</p>
+                    <pre>
+<span class="darkorange">a</span> = <span class="drak_green">"xyz "</span>
+<span class="darkorange">b</span> = <span class="blue">4</span>
+<span class="yellow">Print</span>(<span class="darkorange">First_name</span> + <span class="darkorange">Last_name</span>)
+</pre>
+                    <p>Output</p>
+                    <pre class="red_result">
+<span class="red">print(x + y)</span>
+<span class="red">TypeError:</span>
+<span class="red">unsupported operand type(s) for +: 'int' and 'str'</span> 
+</pre>
+                </div>
+
+                <p><a class="more_info" target="_blank" href="global_variables.html">/// Global variables ///</a></p>
+
+
+                <p class="imp_note">Basic rule 3 : <br> Variables = value holding boxes.</p>
+            </div>
+
+
+
+
+
+
+
+
+            <!--///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////-->
+
+            <!-- next previous -->
+            <div class="ne_pre">
+                <a href="comment.html">
+                    <!-- <button title="It's ok to go back" class="pre">Content page</button> -->
+                    <img src="../left-arrow.png" alt="">
+                </a>
+                <a href="datatypes.html">
+                    <!-- <button title="level up" class="ne">next page</button> -->
+                    <img src="../right-arrow.png" alt="">
+                </a>
+            </div>
+            <p class="top_nav"><a href="../index.html">Home</a> >> <a href="../content.html">Contents</a> >> <a
+                    href="variables.html"><u>Variables</u></a></p>
+            <!-- end of print variables -->
+        </div> <!-- end of content files -->
+    </div> <!-- end of container -->
+
+
+
+    <footer id="footer">
+        <div class="contact_us">
+            <h3>Contact us</h3>
+            <p> Email: gblvenkatesh@gmail.com</p>
+            <div id="social_media">
+                <div>
+                    <img src="../social _media/linkedin.png" alt="">
+                </div>
+                <div>
+                    <img src="../social _media/instagram.png" alt="">
+                </div>
+                <div>
+                    <img src="../social _media/whatsapp.png" alt="">
+                </div>
+                <div>
+                    <img src="../social _media/twitter.png" alt="">
+                </div>
+                <div>
+                    <img src="../social _media/facebook.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="author">
+            <p>Author: Gubbala. Bogalingeswara Venkatesh</p>
+            <button>About me</button>
+            <p> © All Copyrights reserved</p>
+        </div>
+
+    </footer>
+
+
+
+    <!-- home icon -->
+    <div id="up_down">
+        <a href="index.html"><img src="../navbar_icons/home.png" alt=""></a>
+        <a href="#header"><img src="../arrow-up.png" alt=""></a>
+        <a href="#footer"><img src="../down-arrow.png" alt=""></a>
+    </div>
+
+    <script>
+        function op() {
+            document.querySelector('.nav_list').setAttribute("style", "opacity: 1; z-index: 1;");
+            document.querySelector("button").innerText = "2 Close";
+            document.querySelector("#banner").setAttribute("style", "opacity: 0.5;")
+        }
+        function rig() {
+            document.querySelector('.nav_list').setAttribute("style", "opacity: 0; z-index: -1;");
+            document.querySelector("button").innerText = "Menu";
+            document.querySelector("#banner").setAttribute("style", "opacity: 1;")
+        }
+
+    </script>
+</body>
+
+</html>

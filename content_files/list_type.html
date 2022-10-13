@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../common.css">
+    <link href="../edo.ttf">
+    <link href="../poppins/Poppins-Medium.ttf">
+    <title>List type</title>
+</head>
+
+<body class="body">
+
+    <!-- HEADER -->
+    <header id="header">
+        <nav id="nav_bar">
+            <div class="logo">
+                <img class="logo_img" src="../logo-removebg-preview.png" alt="logo">
+                 <span class="logo_text">Python</span>
+            </div>
+            <div id="menu">
+                <button class="menu_button" onclick="op()" ondblclick="rig()">Menu</button>
+                <button class="contact_button"><a href="contact.html">Contact</a></button>
+                <button class="content_button"><a href="../content.html">Content</a></button>
+            </div>
+        </nav>
+    </header>
+
+    <div onclick="rig()" class="nav_list">
+        <a href="../index.html"><img class="nav_img" src="../navbar_icons/home.png" alt=""></a>
+        <a href="../content.html"><img class="nav_img" src="../navbar_icons/open-book.png" alt=""></a>
+        <a href="#"><img class="nav_img" src="../navbar_icons/phone-call.png" alt=""></a>
+        <a href="#"><img class="nav_img" src="../navbar_icons/info.png" alt=""></a>
+    </div>
+
+
+    <div class="status">
+        <div class="title">
+            <h1>Python</h1>
+            <p>For complete begnniers</p>
+        </div>
+        <div class="status_bar">
+            <h4>STATUS BAR</h4>
+        </div>
+    </div>
+
+
+
+    <div class="container">
+        <div class="index">
+            <ul class="index_list">
+                <a href="../index.html">
+                    <li class="nav_heading">
+                        <img src="../logo-removebg-preview.png" alt="">
+                        <h3>Python</h3>
+                    </li>
+                </a>
+                <a href="introduction.html">
+                    <li class="side_bar_item">Intro</li>
+                </a>
+                <a href="syntax.html">
+                    <li class="side_bar_item">Syntax</li>
+                </a>
+                <a href="comment.html">
+                    <li class="side_bar_item">Comment</li>
+                </a>
+                <a href="variables.html">
+                    <li class="side_bar_item">Variables</li>
+                </a>
+                <a href="datatypes.html">
+                    <li class="side_bar_item selected">Datatypes</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Casting</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Strings</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Booleans</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Operators</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">If else</li>
+                </a>
+                <a href="#">
+                    <li class="side_bar_item">Loops</li>
+                </a>
+            </ul>
+        </div>
+        <!-- end of index -->
+        <!-- content_files -->
+        <div class="content_file" id="numeric_file">
+            <p class="top_nav"><a href="../index.html">Home</a> >> <a href="../content.html">Contents</a> >> <a
+                    href="datatypes.html">Datatypes</a> >> <a href="list_type.html"><u>List Type</u></a></p>
+            <!-- next previous -->
+            <div class="ne_pre">
+                <a href="numeric_type.html">
+                    <img src="../left-arrow.png" alt="">
+                </a>
+                <a href="tuple_type.html">
+                    <img src="../right-arrow.png" alt="">
+                </a>
+            </div>
+            <!-- /////////////////////////////////////////////////////////////////////////////////////////////// -->
+
+            <div class="main_content">
+                <h1 class="heading">List type</h1>
+                <p>List is the one of the 4 build-in types Python has. List can contain list of same of data also list
+                    of
+                    different types of data.</p>
+                <p class="example">Syntax : <i>list_variable = [value1, value2, value3, ...]</i></p>
+                <p>Values can be added, removed and changed form the list.</p>
+                <p>List items are ordered, changeable, and allow duplicate values.</p>
+                <p>List items are indexed. The first item index is [0], second item index is [1] and soon. Length of
+                    list has no limits.</p>
+                <p></p>
+                <div class="code">
+                    <p>Example 21 : List type</p>
+                    <pre>
+<span class="darkorange">a</span> = [<span class="drak_green">"apple"</span>, <span class="drak_green">"banana"</span>, <span class="drak_green">"orange"</span>]
+<span class="darkorange">a</span> = [<span class="drak_green">"apple"</span>, <span class="blue">5</span>, <span class="blue">4.5</span>]
+</pre>
+                </div>
+                <h1>List methods :</h1>
+                <br>
+                <p><a class="more_info" target="_blank" href="list_access.html">/// List access ///</a> </p>
+                <p><a class="more_info" target="_blank" href="list_add.html">/// List add ///</a> </p>
+                <p><a class="more_info" target="_blank" href="list_remove.html">/// List remove ///</a> </p>
+                <p><a class="more_info" target="_blank" href="list_change.html">/// List change ///</a> </p>
+                <p><a class="more_info" target="_blank" href="list_sort.html">/// List sort ///</a> </p>
+                <p><a class="more_info" target="_blank" href="list_copy.html">/// List copy ///</a> </p>
+                <p><a class="more_info" target="_blank" href="list_join.html">/// List join ///</a> </p>
+                <p><a class="more_info" target="_blank" href="list_loop.html">/// List loop ///</a> </p>
+                <p><a class="more_info" target="_blank" href="list_comprehension.html">/// List comprehension ///</a>
+                </p>
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <!-- //////////////////////////////////////////////////////////////////////////////////////////////// -->
+            <!-- next previous -->
+            <div class="ne_pre">
+                <a href="numeric_type.html">
+                    <img src="../left-arrow.png" alt="">
+                </a>
+                <a href="tuple_type.html">
+                    <img src="../right-arrow.png" alt="">
+                </a>
+            </div>
+            <p class="top_nav"><a href="../index.html">Home</a> >> <a href="../content.html">Contents</a> >> <a
+                    href="datatypes.html">Datatypes</a> >> <a href="list_type.html"><u>List Type</u></a></p>
+        </div>
+        <!-- end of content files -->
+    </div>
+    <!-- end of container -->
+
+    <footer id="footer">
+        <div class="contact_us">
+            <h3>Contact us</h3>
+            <p> Email: gblvenkatesh@gmail.com</p>
+            <div id="social_media">
+                <div>
+                    <img src="../social _media/linkedin.png" alt="">
+                </div>
+                <div>
+                    <img src="../social _media/instagram.png" alt="">
+                </div>
+                <div>
+                    <img src="../social _media/whatsapp.png" alt="">
+                </div>
+                <div>
+                    <img src="../social _media/twitter.png" alt="">
+                </div>
+                <div>
+                    <img src="../social _media/facebook.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="author">
+            <p>Author : Gubbala. Bogalingeswara Venkatesh</p>
+            <button>About me</button>
+            <p> © All Copyrights reserved</p>
+        </div>
+
+    </footer>
+
+
+
+    <!-- home icon -->
+    <div id="up_down">
+        <a href="index.html"><img src="../navbar_icons/home.png" alt=""></a>
+        <a href="#header"><img src="../arrow-up.png" alt=""></a>
+        <a href="#footer"><img src="../down-arrow.png" alt=""></a>
+    </div>
+
+    <script>
+        function op() {
+            document.querySelector('.nav_list').setAttribute("style", "opacity: 1; z-index: 1;");
+            document.querySelector("button").innerText = "2 Close";
+            document.querySelector("#banner").setAttribute("style", "opacity: 0.5;")
+        }
+        function rig() {
+            document.querySelector('.nav_list').setAttribute("style", "opacity: 0; z-index: -1;");
+            document.querySelector("button").innerText = "Menu";
+            document.querySelector("#banner").setAttribute("style", "opacity: 1;")
+        }
+
+    </script>
+
+</body>
+
+</html>
